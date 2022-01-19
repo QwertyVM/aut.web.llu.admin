@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty","html:target/HtmlReports"},
         monochrome = true,
-        features = "src/test/resources/features/login/1_ingresoWeb.feature"
+        features = "src/test/resources/features/login/LoginWeb.feature"
 
 )
 public class CucumberTestSuite {}

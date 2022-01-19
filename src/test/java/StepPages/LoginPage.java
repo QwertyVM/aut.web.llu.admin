@@ -1,11 +1,11 @@
-package pages;
+package StepPages;
 
 import net.thucydides.core.annotations.Step;
-import pages.locators.LluAdmin_LoginPage;
+import PageObjects.UI_LoginPage;
 
 public class LoginPage {
 
-    LluAdmin_LoginPage loginPage;
+    UI_LoginPage loginPage;
 
     @Step
     public void openApplication(){

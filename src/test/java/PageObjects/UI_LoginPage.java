@@ -1,9 +1,9 @@
-package pages.locators;
+package PageObjects;
 
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.By;
 
-public class LluAdmin_LoginPage extends PageObject {
+public class UI_LoginPage extends PageObject {
 
     public void enterUname(String uname){
         $(By.name("user")).type(uname);

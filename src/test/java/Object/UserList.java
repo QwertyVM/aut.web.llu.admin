@@ -1,4 +1,4 @@
-package starter.Objeto;
+package Object;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,11 +1,11 @@
-package pages;
+package StepPages;
 
 import net.thucydides.core.annotations.Step;
-import pages.locators.LluAdmin_UserHomePage;
+import PageObjects.UI_UserHomePage;
 
 public class UserHomePage {
 
-    LluAdmin_UserHomePage userHomePage;
+    UI_UserHomePage userHomePage;
 
     @Step
     public void verifyAdminLogin(String modExpected){

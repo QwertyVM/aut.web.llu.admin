@@ -1,9 +1,9 @@
-package starter.stepdefinitions;
+package stepdefinitions;
 
 
 import io.cucumber.java.en.Given;
 import net.thucydides.core.annotations.Steps;
-import pages.LoginPage;
+import StepPages.LoginPage;
 
 public class BackgroundSteps {
     @Steps

@@ -1,11 +1,11 @@
-package pages.locators;
+package PageObjects;
 
 import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class LluAdmin_UserHomePage extends PageObject {
+public class UI_UserHomePage extends PageObject {
 
     public void loginVerified(String modExpected){
 

@@ -2,7 +2,7 @@
 
 Serenity BDD is a library that makes it easier to write high quality automated acceptance tests, with powerful reporting and living documentation features. It has strong support for both web testing with Selenium, and API testing using RestAssured.
 
-Serenity strongly encourages good test automation design, and supports several design patterns, including classic Page Objeto, the newer Lean Page Objeto/ Action Classes approach, and the more sophisticated and flexible Screenplay pattern.
+Serenity strongly encourages good test automation design, and supports several design patterns, including classic Page Object, the newer Lean Page Object/ Action Classes approach, and the more sophisticated and flexible Screenplay pattern.
 
 The latest version of Serenity supports Cucumber 5.5.
 
@@ -59,7 +59,7 @@ The sample code in the master branch uses the Screenplay pattern. The Screenplay
     }
 ```
 
-Screenplay classes emphasise reusable components and a very readable declarative style, whereas Lean Page Objeto and Action Classes (that you can see further down) opt for a more imperative style.
+Screenplay classes emphasise reusable components and a very readable declarative style, whereas Lean Page Object and Action Classes (that you can see further down) opt for a more imperative style.
 
 The `NavigateTo` class is responsible for opening the Wikipedia home page:
 ```java
@@ -84,7 +84,7 @@ public class LookForInformation {
 }
 ```
 
-In Screenplay, we keep track of locators in light weight page or component objects, like this one:
+In Screenplay, we keep track of PageObjects in light weight page or component objects, like this one:
 ```java
 class SearchForm {
     static Target SEARCH_FIELD = Target.the("search field")
@@ -145,7 +145,7 @@ public class NavigateTo {
 }
 ```
 
-It does this using a standard Serenity Page Object. Page Objeto are often very minimal, storing just the URL of the page itself:
+It does this using a standard Serenity Page Object. Page Object are often very minimal, storing just the URL of the page itself:
 ```java
 @DefaultUrl("https://wikipedia.org")
 public class WikipediaHomePage extends PageObject {}
@@ -163,7 +163,7 @@ public class SearchFor extends UIInteractionSteps {
 }
 ```
 
-The `SearchForm` class is typical of a light-weight Page Object: it is responsible uniquely for locating elements on the page, and it does this by defining locators or occasionally by resolving web elements dynamically.
+The `SearchForm` class is typical of a light-weight Page Object: it is responsible uniquely for locating elements on the page, and it does this by defining PageObjects or occasionally by resolving web elements dynamically.
 ```java
 class SearchForm {
     static By SEARCH_FIELD = By.cssSelector("#searchInput");

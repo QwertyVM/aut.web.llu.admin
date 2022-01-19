@@ -1,10 +1,10 @@
-package pages.locators;
+package PageObjects;
 
 import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
-public class LluAdmin_CreateUserPage extends PageObject {
+public class UI_CreateUserPage extends PageObject {
 
     public void enterName(String name){
         $(By.name("name")).type(name);

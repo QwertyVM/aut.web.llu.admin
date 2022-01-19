@@ -1,11 +1,11 @@
-package pages;
+package StepPages;
 
 import net.thucydides.core.annotations.Step;
-import pages.locators.LluAdmin_CreateUserPage;
+import PageObjects.UI_CreateUserPage;
 
 public class CreateUserPage {
 
-    LluAdmin_CreateUserPage createUser;
+    UI_CreateUserPage createUser;
 
     @Step
     public void enterName(String name){

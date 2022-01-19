@@ -1,13 +1,13 @@
-package starter.stepdefinitions;
+package stepdefinitions;
 
 import io.cucumber.java.DataTableType;
-import starter.Objeto.User;
+import Object.User;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import pages.CreateUserPage;
-import pages.UserHomePage;
+import StepPages.CreateUserPage;
+import StepPages.UserHomePage;
 import java.util.List;
 import java.util.Map;
 

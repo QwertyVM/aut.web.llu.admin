@@ -1,12 +1,12 @@
-package starter.stepdefinitions;
+package stepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import pages.LoginPage;
-import pages.UserHomePage;
+import StepPages.LoginPage;
+import StepPages.UserHomePage;
 
 public class Login_Ingresar {
 

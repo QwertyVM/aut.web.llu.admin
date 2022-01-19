@@ -1,4 +1,4 @@
-package starter.Objeto;
+package Object;
 
 public class User {
 

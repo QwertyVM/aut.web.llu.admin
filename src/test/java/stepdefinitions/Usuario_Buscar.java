@@ -1,10 +1,10 @@
-package starter.stepdefinitions;
+package stepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import pages.UserHomePage;
+import StepPages.UserHomePage;
 
 public class Usuario_Buscar {
 
